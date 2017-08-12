@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title : string;
+  name : string;
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  constructor() {
+    this.title = 'Jl Jungle';
+    this.name = 'xXxXxX';
+  }
+
+  eventoClick():void{
+    this.name = this.name.toUpperCase();
+    this.title = this.title.toUpperCase();
+  }
 }
+
