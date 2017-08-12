@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { InputComponent } from './input/input.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,12 @@ export class AppComponent {
     this.title = 'Jl Jungle';
     this.name = 'xXxXxX';
   }
+  votos = [
+    {title: 'opcion 1'},
+    {title: 'opcion 2'},
+    {title: 'opcion 3'},
+    {title: 'opcion 4'}
+  ]
 
   eventoClick():void{
     this.name = this.name.toUpperCase();

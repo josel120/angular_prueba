@@ -7,7 +7,7 @@
   </h2>
  
   <input  [value]='name' (input)='name=$event.target.value'/>
-  
+  <input [(ngModel)]="name" />
 
   <button (click)="eventoClick()">Click me</button>
 <ul>
@@ -21,3 +21,6 @@
       {{ vaina }}
     </li>
   </ul>
+  <div *ngFor="let voto of votos">
+<input-component voto="{{voto.title}}"></input-component>
+  </div>
