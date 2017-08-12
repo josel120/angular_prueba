@@ -6,11 +6,18 @@
     Welcome to {{name}}!
   </h2>
  
-  <input type="text" />
+  <input  [value]='name' (input)='name=$event.target.value'/>
   
+
   <button (click)="eventoClick()">Click me</button>
 <ul>
     <li *ngFor="let hero of heroes">
       {{ hero }}
+    </li>
+  </ul>
+
+<ul>
+    <li *ngFor="let vaina of vainas">
+      {{ vaina }}
     </li>
   </ul>
