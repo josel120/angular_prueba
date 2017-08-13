@@ -9,6 +9,8 @@ import { InputComponent } from './input/input.component';
 export class AppComponent {
   title : string;
   name : string;
+  votacion="";
+
   heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
    vainas = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
   constructor() {
@@ -22,6 +24,9 @@ export class AppComponent {
     {title: 'opcion 4'}
   ]
 
+  addVoto(response:string){
+    this.votacion = "escogiste: "+response;
+  }
   eventoClick():void{
     this.name = this.name.toUpperCase();
     this.title = this.title.toUpperCase();
